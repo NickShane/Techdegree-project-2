@@ -13,32 +13,35 @@
 
 <body>
     <div class="wrap">
+        <div class="first-half">
       <header>
-          <div class="main-header">
+          <div class="main-header" id="center">
            <div  class="name">
            <h1>Student Name</h1></div>
              <div class="main-nav">
                 <ul class="main-nav">
-                  <li><a href="#home">Home</a></li>
-                  <li><a href="#portfolio">Portfolio</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Skills</a></li>
                 </ul>
              </div>
          </div>     
     </header>
+         
     
    
-        <div class="container">
-            <div class="bio">
-              <p>Hi! I'm a front-end developer who loves responsive design and css.<br> I recently finished learning front-end web development at Treehouse <br>and I am excited to put all my skills to use!</p>
+        <div class="container" id="outer">
+            <div class="bio" id="bot">
+              <p>Hi! I'm a front-end developer who loves responsive design and css.I recently finished learning front-end web development at Treehouse and I am excited to put all my skills to use!</p>
             </div>
-                <div class="bio2">
+                <div class="bio2" id="top">
                      <img class="student-photo" src="images/responsive-layout-profile.png" alt="profile photo">       
                 </div>
          </div>
+               </div>
      
-    
+    <div class="other-half">
     <div class="coloumn clearfix" id="coloumn">
         <h2>PORTFOLIO</h2>
         <div class="primary col">
@@ -99,10 +102,10 @@
     
     
  
-    <footer>
+    <footer id="center">
         <div class="contact">
             <h4 class="detail">CONTACT</h4>
-              <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p><br>
+              <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
               <p id="phone">Phone: <a href="tel:+1(111)555-1234"><strong>+1(111)555-1234</strong></a> </p>
               <p id="email">Email: <a href="mailto:email@yoursite.com? subject=Let's%20Connect!"><strong>email@yoursite.com</strong></a></p>
             </div>
@@ -122,7 +125,8 @@
              
            </div> 
    </footer>
-    </div>
+       </div>
+</div>
 </body>
 
 </html>

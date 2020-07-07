@@ -8,7 +8,7 @@
      box-sizing: border-box;  
      margin: 0 auto; 
      text-decoration: none;
-     text-align: center;
+/*     text-align: center;*/
 
 }
 
@@ -24,16 +24,67 @@ ul {
 
 
 .wrap {
-    display: inline-block;
     text-align: center;
     background: rgba(238, 238, 238, 0.35);
+    max-width: 1024px;
 }
 
-#coloumn {
-    background: #fff;
-    width: 98%;
-    padding-top: 10px;
+
+
+
+
+
+
+/*------------------------------------------------------------------*/
+/*---------------------Links--------------------------*/
+/*------------------------------------------------------------------*/
+
+
+
+.main-nav a {
+  transition: all .5s;
 }
+.main-nav a:hover {
+  color: #0399ff;
+    
+}
+
+
+.name,
+.main-nav a {
+    text-align: center;
+    display: block;
+    padding:  10px 15px;
+}
+
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
+
+a:active {
+    color: black;
+}
+
+a:focus {
+    color: white;
+    background-color: orange;
+}
+
+
+
+
+
+
 
 
 /*-------------------------H elements-------------------------*/
@@ -41,7 +92,6 @@ ul {
 
 h1 {
     letter-spacing: 2px;
-    font-weight: 600;
 }
 
 
@@ -61,35 +111,25 @@ h3 {
     
 
 
-/* -------------------------------------BODY---------------------------------   */
-    
 
 
+#coloumn {
+    background: #fff;
+    width: 98%;
+    padding-top: 10px;
+}
 
-/*----------------Header-----------------------------*/
 
-
-    .main-nav {
-        margin-top: 0;
-        float: right;
-        padding: 16px 10px;
-    }
-    
-    .main-nav li {
-        display: inline-block;
-        margin-left: 15px;
-        
-    }
-
-    
+  
     .container {
         display: inline-block;
         width: 100%;
         clear: both;
+        text-align: left;
     }
     
     .bio {
-        margin: 10px 10px;
+        margin: 0 auto;
         float: left;
     }
     
@@ -98,6 +138,66 @@ h3 {
         width: 30%;
         margin: 10px 10px;
     }
+
+/*------------ Media Queries----------------------------------------------------------*/
+
+
+/*------1024PX RESOLUTION-------*/
+
+
+
+@media (min-width: 1024px) {
+    
+
+/*  --Float Clearfix-- */
+    
+    	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+    
+    
+    .bio {
+        width: 60%;
+    }
+    
+    
+    .bio,
+    .bio2 {
+        margin: 10px 10px;
+        padding: 10px 10px;
+    }
+    
+
+
+
+
+
+
+/* -------------------------------------BODY---------------------------------   */
+    
+
+
+    
+
+/*----------------Header-----------------------------*/
+
+
+    .main-nav {
+        margin-top: 0;
+        float: right;
+        padding-top: 23px;
+    }
+    
+    .main-nav li {
+        display: inline-block;
+        margin-left: 15px;
+        
+    }
+
+  
+
 
 
 
@@ -276,39 +376,16 @@ a:focus {
 
 
 
-/*------------ Media Queries----------------------------------------------------------*/
 
 
-
-
-/*------1024PX RESOLUTION-------*/
-
-
-
-@media (min-width: 980px) {
-    
-
-/*  --Float Clearfix-- */
-    
-    	.clearfix::after {
-		content: " ";
-		display: table;
-		clear: both;
-	}
-
-
-
-
-    .wrap {
-        width: 90%;
-        max-width: 1150px;
-        }
-    
-
-    
-    
 
 }
+
+
+
+    
+
+
 
 
 
@@ -318,7 +395,7 @@ a:focus {
 
 /*----------------------------------768px Resolution---------------------------------*/
 
-@media (min-width: 768px) {
+@media (max-width: 1023px) {
     
     
 /*  --Float Clearfix-- */
@@ -331,8 +408,129 @@ a:focus {
 }
     
     .wrap {
+        margin: 0 auto;
+    }
+    
+/*----------------------CENTRAL ELEMENTS---------------------------------*/
+    
+
+    .wrap,
+    .wrap img {
+        width: 90%;
+        height: auto;
+    }
+    
+    .bio {
+        width: 62%;
+        text-align: left;
+        margin-top: 10px;
+        margin-left: 10px;
+        padding: 10px 10px;
+    }
+    
+    .bio2 {
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+    
+    .first-half {
+        width: 100%;
+        display: block;
+    }
+    
+    
+    
+    .other-half {
+        width: 100%;
+    }
+    
+    .coloumn {
+        width: 100%;
+        display: inline-block;
+    }
+    
+    
+    .primary {
+        width: 100%;
+    }
+    
+    .secondary {
+        width: 100%;
+    }
+    
+    .first {
+        float: left;
+        width: 50%;
+    }
+    .second {
+        width: 50%;
+        float: right;
+    }
+    .third {
+        float: left;
+        width: 50%;
+    }
+    .fourth {
+        width: 50%;
+        float: right;
+    }
+    .fifth {
+        float: left;
+        width: 50%;
+    }
+    .sixth {
+        width: 50%;
+        float: right;
+    }
+    
+    
+    .first,
+    .second,
+    .third,
+    .fourth,
+    .fifth,
+    .sixth {
+        padding: 20px 2px;
+    }
+    
+    
+       
+/*-----------FOOTER-----------------------------*/
+    
+.main-footer {
+    clear: both;
+    display: inline-block;
     width: 100%;
-    margin: 0 auto;
+    border-top: solid 1px #eee;
+}
+    
+    #center {
+        text-align: center;
+    }
+    
+    
+    .contact {
+        width: 50%;
+        line-height: 25px;
+    }
+    
+    #phone,
+    #email {
+        padding-bottom: 10px;
+    }
+    
+       .main-nav {
+        margin-top: 0;
+        padding-top: 2px;
+    }
+    
+    .main-nav li {
+        display: inline-block;
+        
+    }
+    
+    .name {
+        padding-bottom: 2px;
     }
 
 
@@ -343,7 +541,7 @@ a:focus {
 
 /*---------------------------------------320PX RESOLUTION-------------------------------------*/
 
-@media (min-width: 320px) {
+@media (max-width: 768px) {
     
     
     
@@ -358,13 +556,46 @@ a:focus {
     
     .wrap {
         width: 100%;
-        margin: 0 auto;
     }
     
     
     
+    .main-nav li {
+        display: block;
+        background: #fff;
+        padding: 2px 2px;
+        width: 90%;
+        border: solid 1px #eee;
+    }
     
-
+    .container {
+        display: inline-block;
+        margin: 0 auto;
+    }
+    
+    .bio2 {
+        width: 40%;
+        float: none;
+    }
+    
+    .bio {
+        width: 45%;
+        text-align: left;
+        float: none;
+    }
+    
+    
+    .first,
+    .second,
+    .third,
+    .fourth,
+    .fifth,
+    .sixth {
+        padding: 20px 2px;
+        float: none;
+        width: 80%;
+    }
+    
 }
 
 
