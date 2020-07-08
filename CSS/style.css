@@ -34,7 +34,6 @@ ul {
 
 
 
-
 /*------------------------------------------------------------------*/
 /*---------------------Links--------------------------*/
 /*------------------------------------------------------------------*/
@@ -397,7 +396,6 @@ a:focus {
 
 @media (max-width: 1023px) {
     
-    
 /*  --Float Clearfix-- */
        
         
@@ -512,9 +510,15 @@ a:focus {
     .contact {
         width: 50%;
         line-height: 25px;
+        clear: both;
     }
     
     #phone,
+    #email {
+        padding-top: 10px;
+    }
+    
+    
     #email {
         padding-bottom: 10px;
     }
@@ -533,7 +537,7 @@ a:focus {
         padding-bottom: 2px;
     }
 
-
+            
 }
 
 
@@ -567,21 +571,31 @@ a:focus {
         width: 90%;
         border: solid 1px #eee;
     }
+/*
+    
+    .main-nav {
+        margin-bottom: 15px;
+    }
+*/
     
     .container {
         display: inline-block;
         margin: 0 auto;
+        text-align: center;
     }
     
     .bio2 {
-        width: 40%;
+        width: 80%;
         float: none;
+        margin-left: 10%;
     }
     
     .bio {
-        width: 45%;
+        width: 95%;
         text-align: left;
         float: none;
+        padding: 5px;
+        text-align: center;
     }
     
     
@@ -595,6 +609,101 @@ a:focus {
         float: none;
         width: 80%;
     }
+    
+    
+    
+    
+    
+    #phone,
+    #email {
+        padding-top: 10px;
+    }
+    
+    
+    #email {
+        padding-bottom: 10px;
+    }
+    
+    
+    
+}
+
+/*---------------------------------------320PX RESOLUTION-------------------------------------*/
+
+@media (max-width: 320px) {
+    
+    
+    
+/*  --Float Clearfix-- */
+        
+    	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+    
+    
+    .wrap {
+        width: 100%;
+    }
+    
+    
+    
+    .main-nav li {
+        display: block;
+        background: #fff;
+        padding: 2px 2px;
+        width: 90%;
+        border: solid 1px #eee;
+    }
+    
+    .container {
+        display: inline-block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .bio2 {
+        width: 80%;
+        float: none;
+        margin-left: 10%;
+    }
+    
+    .bio {
+        width: 95%;
+        text-align: left;
+        float: none;
+        padding: 5px;
+        text-align: center;
+    }
+    
+    
+    .first,
+    .second,
+    .third,
+    .fourth,
+    .fifth,
+    .sixth {
+        padding: 20px 2px;
+        float: none;
+        width: 80%;
+    }
+    
+    
+    
+    
+    
+    #phone,
+    #email {
+        padding-top: 10px;
+    }
+    
+    
+    #email {
+        padding-bottom: 10px;
+    }
+    
+    
     
 }
 
