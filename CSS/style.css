@@ -156,6 +156,12 @@ h3 {
 		clear: both;
 	}
     
+    .wrap {
+        width: 90%;
+        max-width: 1024;
+    }
+    
+    
     
     .bio {
         width: 60%;
@@ -168,6 +174,22 @@ h3 {
         padding: 10px 10px;
     }
     
+    
+    #center {
+        width: 100%;
+    }
+    
+    
+    
+    .main-nav {
+        display: inline-block;
+        float: right;
+    }
+    
+    .name {
+        display: block;
+        float: left;
+    }
 
 
 
@@ -394,7 +416,7 @@ a:focus {
 
 /*----------------------------------768px Resolution---------------------------------*/
 
-@media (max-width: 1023px) {
+@media (min-width: 768px) {
     
 /*  --Float Clearfix-- */
        
@@ -405,197 +427,107 @@ a:focus {
     clear: both;
 }
     
+    
     .wrap {
-        margin: 0 auto;
-    }
-    
-/*----------------------CENTRAL ELEMENTS---------------------------------*/
-    
-
-    .wrap,
-    .wrap img {
         width: 90%;
-        height: auto;
     }
-    
-    .bio {
-        width: 62%;
-        text-align: left;
-        margin-top: 10px;
-        margin-left: 10px;
-        padding: 10px 10px;
-    }
-    
-    .bio2 {
-        margin-top: 10px;
-        padding-top: 10px;
-    }
-    
-    .first-half {
-        width: 100%;
-        display: block;
-    }
-    
-    
-    
-    .other-half {
+    .wrap img {
         width: 100%;
     }
     
-    .coloumn {
-        width: 100%;
-        display: inline-block;
-    }
     
     
-    .primary {
-        width: 100%;
-    }
+/* --------  ------------------ Header & Footer   ----------------- ------------   */
     
-    .secondary {
-        width: 100%;
-    }
-    
-    .first {
-        float: left;
-        width: 50%;
-    }
-    .second {
-        width: 50%;
-        float: right;
-    }
-    .third {
-        float: left;
-        width: 50%;
-    }
-    .fourth {
-        width: 50%;
-        float: right;
-    }
-    .fifth {
-        float: left;
-        width: 50%;
-    }
-    .sixth {
-        width: 50%;
-        float: right;
-    }
-    
-    
-    .first,
-    .second,
-    .third,
-    .fourth,
-    .fifth,
-    .sixth {
-        padding: 20px 2px;
-    }
-    
-    
-       
-/*-----------FOOTER-----------------------------*/
-    
-.main-footer {
-    clear: both;
-    display: inline-block;
-    width: 100%;
-    border-top: solid 1px #eee;
-}
     
     #center {
-        text-align: center;
+        display: inline-block;
+        width: 80%
     }
     
+
     
-    .contact {
-        width: 50%;
-        line-height: 25px;
-        clear: both;
+    .name {
+        margin-top: 10px;
     }
     
-    #phone,
-    #email {
-        padding-top: 10px;
-    }
-    
-    
-    #email {
-        padding-bottom: 10px;
-    }
-    
-       .main-nav {
+    .main-nav {
         margin-top: 0;
         padding-top: 2px;
     }
     
     .main-nav li {
         display: inline-block;
+        margin-left: 15px;
         
     }
     
-    .name {
-        padding-bottom: 2px;
-    }
-
-            
-}
-
-
-
-
-/*---------------------------------------320PX RESOLUTION-------------------------------------*/
-
-@media (max-width: 768px) {
-    
-    
-    
-/*  --Float Clearfix-- */
-        
-    	.clearfix::after {
-		content: " ";
-		display: table;
-		clear: both;
-	}
-    
-    
-    .wrap {
-        width: 100%;
-    }
-    
-    
-    
-    .main-nav li {
-        display: block;
-        background: #fff;
-        padding: 2px 2px;
-        width: 90%;
-        border: solid 1px #eee;
-    }
-/*
-    
-    .main-nav {
-        margin-bottom: 15px;
-    }
-*/
     
     .container {
-        display: inline-block;
-        margin: 0 auto;
-        text-align: center;
-    }
-    
-    .bio2 {
-        width: 80%;
-        float: none;
-        margin-left: 10%;
+        width: 100%;
+        margin-top: 30px;
     }
     
     .bio {
-        width: 95%;
-        text-align: left;
-        float: none;
-        padding: 5px;
-        text-align: center;
+        width: 65%;
+        margin-top: 20px;
+        margin-left: 10px;
+        line-height: 1.5rem;
+        padding: 0 2px;
+    }
+    
+    .bio2 {
+        width: 30%;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+/*------------ IMAGES -------------------------- ----------------------------*/
+   
+    
+    #coloumn {
+        width: 99%;
+    }
+
+    .primary,
+    .secondary {
+        width: 100%;
+    }
+    
+    .first {
+        width: 50%;
+        float: left;
+    }
+    
+    .second {
+        float: right;
+        width: 50%;
+    }
+    .third {
+        width: 50%;
+        float: left;
+    }
+    
+    .fourth {
+        float: right;
+        width: 50%;
+    }
+    .fifth {
+        width: 50%;
+        float: left;
+    }
+    
+    .sixth {
+        float: right;
+        width: 50%;
     }
     
     
@@ -605,107 +537,12 @@ a:focus {
     .fourth,
     .fifth,
     .sixth {
-        padding: 20px 2px;
-        float: none;
-        width: 80%;
-    }
-    
-    
-    
-    
-    
-    #phone,
-    #email {
-        padding-top: 10px;
-    }
-    
-    
-    #email {
-        padding-bottom: 10px;
+        padding: 10px 10px;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
     
     
     
 }
-
-/*---------------------------------------320PX RESOLUTION-------------------------------------*/
-
-@media (max-width: 320px) {
-    
-    
-    
-/*  --Float Clearfix-- */
-        
-    	.clearfix::after {
-		content: " ";
-		display: table;
-		clear: both;
-	}
-    
-    
-    .wrap {
-        width: 100%;
-    }
-    
-    
-    
-    .main-nav li {
-        display: block;
-        background: #fff;
-        padding: 2px 2px;
-        width: 90%;
-        border: solid 1px #eee;
-    }
-    
-    .container {
-        display: inline-block;
-        margin: 0 auto;
-        text-align: center;
-    }
-    
-    .bio2 {
-        width: 80%;
-        float: none;
-        margin-left: 10%;
-    }
-    
-    .bio {
-        width: 95%;
-        text-align: left;
-        float: none;
-        padding: 5px;
-        text-align: center;
-    }
-    
-    
-    .first,
-    .second,
-    .third,
-    .fourth,
-    .fifth,
-    .sixth {
-        padding: 20px 2px;
-        float: none;
-        width: 80%;
-    }
-    
-    
-    
-    
-    
-    #phone,
-    #email {
-        padding-top: 10px;
-    }
-    
-    
-    #email {
-        padding-bottom: 10px;
-    }
-    
-    
-    
-}
-
-
 
