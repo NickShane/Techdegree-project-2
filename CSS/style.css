@@ -8,8 +8,7 @@
      box-sizing: border-box;  
      margin: 0 auto; 
      text-decoration: none;
-/*     text-align: center;*/
-
+     text-align: center;
 }
 
 title {
@@ -25,524 +24,156 @@ ul {
 
 .wrap {
     text-align: center;
-    background: rgba(238, 238, 238, 0.35);
-    max-width: 1024px;
+    background: rgba(238, 238, 238, 0.21);
 }
 
 
+/*---------------------------HEADER---------------------------------------------*/
 
-
-
-
-/*------------------------------------------------------------------*/
-/*---------------------Links--------------------------*/
-/*------------------------------------------------------------------*/
-
-
-
-.main-nav a {
-  transition: all .5s;
-}
-.main-nav a:hover {
-  color: #0399ff;
-    
-}
-
-
-.name,
-.main-nav a {
-    text-align: center;
-    display: block;
-    padding:  10px 15px;
-}
-
-
-a:link {
-    color: black;
-    text-decoration: none;
-}
-
-a:visited {
-    color: black;
-}
-
-a:hover {
-    color: blue;
-}
-
-a:active {
-    color: black;
-}
-
-a:focus {
-    color: white;
-    background-color: orange;
-}
-
-
-
-
-
-
-
-
-/*-------------------------H elements-------------------------*/
-
-
-h1 {
-    letter-spacing: 2px;
-}
-
-
-h2,
-h3 {
-    font-size: 1.1em;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-weight: normal;
-}
-
-
-.detail {
-    padding: 10px 10px;
-    margin-bottom: 20px;
-}
-    
-
-
-
-
-#coloumn {
-    background: #fff;
-    width: 98%;
-    padding-top: 10px;
-}
-
-
-  
-    .container {
-        display: inline-block;
-        width: 100%;
-        clear: both;
-        text-align: left;
-    }
-    
-    .bio {
-        margin: 0 auto;
-        float: left;
-    }
-    
-    .bio2 {
-        float: right;
-        width: 30%;
-        margin: 10px 10px;
-    }
-
-/*------------ Media Queries----------------------------------------------------------*/
-
-
-/*------1024PX RESOLUTION-------*/
-
-
-
-@media (min-width: 1024px) {
-    
-
-/*  --Float Clearfix-- */
-    
-    	.clearfix::after {
-		content: " ";
-		display: table;
-		clear: both;
-	}
-    
-    .wrap {
-        width: 90%;
-        max-width: 1024;
-    }
-    
-    
-    
-    .bio {
-        width: 60%;
-    }
-    
-    
-    .bio,
-    .bio2 {
-        margin: 10px 10px;
-        padding: 10px 10px;
-    }
-    
-    
-    #center {
-        width: 100%;
-    }
-    
-    
-    
-    .main-nav {
-        display: inline-block;
-        float: right;
-    }
-    
-    .name {
-        display: block;
-        float: left;
-    }
-
-
-
-
-
-
-/* -------------------------------------BODY---------------------------------   */
-    
-
-
-    
-
-/*----------------Header-----------------------------*/
-
-
-    .main-nav {
-        margin-top: 0;
-        float: right;
-        padding-top: 23px;
-    }
-    
-    .main-nav li {
-        display: inline-block;
-        margin-left: 15px;
-        
-    }
-
-  
-
-
-
-
-
-
-
-/*----------------------COLOUMN--------------------------------------*/
-
-
-
-
-    
-    .wrap img {
-        width: 100%;
-    }
-
- figure {
-     line-height: 1.3em;
-     letter-spacing: 1px;
-     padding-bottom: 1px;
-     padding-left: 15px;
-     margin: 10px 10px;
-     font-size: 15px;
-     font-weight: 200;
-}
-
-
-
-
-
-.primary {
+.wrap {
+    box-sizing: border-box;
     width: 100%;
-}
-
-.secondary {
-    width: 100%;
-}
-
-    
-    
-/*---------------------------Primary Col------------------------------*/
-    
-    
-    
-    .col {
-        display: inline-block;
-        margin: 10px 10px;
-        padding: 10px 10px;
-        clear: both;
-    }
-    
-    .first {
-        width: 33%;
-        float: left;
-    }
-    .second {
-        width: 33%;
-        float: left;
-    }
-    .third {
-        width: 33%;
-        float: right;;
-    }
-
-    
-/*----------------------------Secondary Col------------------------*/
-    
-    .fourth {
-        width: 33%;
-        float: left;
-    }
-    .fifth {
-        width: 33%;
-        float: left;
-    }
-    .sixth {
-        width: 32%;
-        float: right;
-    }
-
-
-    
-
-
-
-
-
-/*------------------------Footer-------------------------------*/
-
-
-
-
-
-.main-footer {
+    margin: 10px 10px;
+/*    max-width: 320px;*/
+    margin: 0 auto;
     clear: both;
-    display: inline-block;
+}
+
+img {
     width: 100%;
-    border-top: solid 1px #eee;
+}
+
+
+
+.main-header {
+    display: block;
 }
 
 .name {
-    float: left;
+    font-size: 1.2em;
+    margin: 10px 10px;
+    padding: 10px 10px;
+}
+
+.main-nav li {
+    display: block;
+    margin-bottom: 10px;
     margin-top: 10px;
-    margin-left: 10px;
+    border: solid white 1px;
+    background-color: white;
+    padding: 10px 0 10px;
+    width: 90%;
 }
 
-h4 {
-    
-    margin: 34px 20px;
+.container {
+    width: 90%;
+    display: block;
     
 }
 
+.bio2 {
+    width: 80%;
+    background-position: center;
+    padding: 10px 10px;
+    margin-top: 2.2em;
+    margin bottom: 1em;
+}
 
-.contact {
+.bio {
     text-align: center;
-    width: 60%;
-    padding: 5px 5px;
-    line-height: 1.5em;
-    margin-bottom: 40px;
-    font-weight: 100;
+    width: 100%;
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
 }
 
+.bio p {
+    color: rgba(139, 137, 137, 0.66);
+    font-weight: 300;
+    line-height: 1.4rem;
+}
+
+/*---------------------------------Coloumns-------------------------------------*/
+
+.coloumn {
+    width: 100%;
+    background-color: white;
+    padding: 10px 10px;
+    border: solid white 1px;
+    
+}
+
+.photo {
+    margin-bottom: 2em;
+    margin-top: 1rem;
+    width: 90%;
+    font-weight: 300;
+    
+}
+
+h2 {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+h3 {    
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    width: 90%;
+    line-height: 1.4rem;
+    letter-spacing: 0.1px;
+}
+
+
+/*--------------------FOOTER--------------------------------------------------*/
+
+
+
+.detail {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.footer-p {
+    font-weight: 300;
+    margin-bottom: 20px;
+    padding: 5px 4px;
+    line-height: 1.5rem;
+}
 
 #phone,
 #email {
-    margin: 10px 10px;
+    padding-bottom: 10px;
+}
+
+#footer-nav {
+   display: none;
 }
 
 
-
-
-/*------------------------------------------------------------------*/
-/*---------------------Links--------------------------*/
-/*------------------------------------------------------------------*/
-
-
-
-.main-nav a {
-  transition: all .5s;
-}
-.main-nav a:hover {
-  color: #0399ff;
-    
-}
-
-
-.name a,
-.main-nav a {
-    text-align: center;
-    display: block;
-    padding:  10px 15px;
-}
-
-
-a:link {
-    color: black;
-    text-decoration: none;
-}
-
-a:visited {
-    color: black;
-}
-
-a:hover {
-    color: blue;
-}
-
-a:active {
-    color: black;
-}
-
-a:focus {
-    color: white;
-    background-color: orange;
-}
-
-
-
-
-
-
-}
-
-
-
-    
-
-
-
-
-
-
-
-
-
-/*----------------------------------768px Resolution---------------------------------*/
-
-@media (min-width: 768px) {
-    
-/*  --Float Clearfix-- */
-       
-        
-    .clearfix::after {
-    content: " ";
-    display: table;
+#below {
+    border-top: solid 1px #eee;
+    width: 90%;
     clear: both;
-}
-    
-    
-    .wrap {
-        width: 90%;
-    }
-    .wrap img {
-        width: 100%;
-    }
-    
-    
-    
-/* --------  ------------------ Header & Footer   ----------------- ------------   */
-    
-    
-    #center {
-        display: inline-block;
-        width: 80%
-    }
-    
-
-    
-    .name {
-        margin-top: 10px;
-    }
-    
-    .main-nav {
-        margin-top: 0;
-        padding-top: 2px;
-    }
-    
-    .main-nav li {
-        display: inline-block;
-        margin-left: 15px;
-        
-    }
-    
-    
-    .container {
-        width: 100%;
-        margin-top: 30px;
-    }
-    
-    .bio {
-        width: 65%;
-        margin-top: 20px;
-        margin-left: 10px;
-        line-height: 1.5rem;
-        padding: 0 2px;
-    }
-    
-    .bio2 {
-        width: 30%;
-        margin-top: 20px;
-        margin-right: 20px;
-        margin-bottom: 20px;
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-/*------------ IMAGES -------------------------- ----------------------------*/
-   
-    
-    #coloumn {
-        width: 99%;
-    }
-
-    .primary,
-    .secondary {
-        width: 100%;
-    }
-    
-    .first {
-        width: 50%;
-        float: left;
-    }
-    
-    .second {
-        float: right;
-        width: 50%;
-    }
-    .third {
-        width: 50%;
-        float: left;
-    }
-    
-    .fourth {
-        float: right;
-        width: 50%;
-    }
-    .fifth {
-        width: 50%;
-        float: left;
-    }
-    
-    .sixth {
-        float: right;
-        width: 50%;
-    }
-    
-    
-    .first,
-    .second,
-    .third,
-    .fourth,
-    .fifth,
-    .sixth {
-        padding: 10px 10px;
-        margin-top: 1em;
-        margin-bottom: 1em;
-    }
-    
-    
-    
+    display: inline-block;
 }
 
+.bot-name {
+    margin: 20px 0;
+    padding: 20px 0;
+    float: left;
+    display: block;
+    width: 40%;
+}
+
+.back li {
+    margin: 20px 0;
+    padding: 20px 0;
+    display: inline-block;
+    float: right;
+    width: 40%;
+}
